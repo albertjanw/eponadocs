@@ -1,6 +1,6 @@
 <h1>Epona Matter Center SPFx configuration</h1>
 
-Epona MC can be confugured by settings in DMS Congiguration.The defaults for all the lists, forms and filters are defined within the app, so the works without additional settings. Only when a customer wants to have something changed, like the title of the Matter column, the columns that are displayed etc. items should be added to the DMS Configuration list to overrule the default.
+Epona MC can be confugured by settings in DMS Configuration.The defaults for all the lists, forms and filters are defined within the app, so the works without additional settings. Only when a customer wants to have something changed, like the title of the Matter column, the columns that are displayed etc. items should be added to the DMS Configuration list to overrule the default.
 
 <h2>General syntax</h2>
 Items added for the Epona MC SPFx app should all have 'SPF' in the Category field. The Title field contains the key for the setting. he key constsist, like for the DMSforLegal settings, of a a more or less hierargical structure of words, each separated by a dot. The value field contains the actual setting, and the desciption is only used as documentation.
@@ -575,3 +575,222 @@ Then of course one can add lines to include specific filters, like below:
 
 
 <img src="advancedfilter.png">
+
+
+
+
+<h2>Language codes</h2>
+
+|Item|Value|Description|
+--- | --- | ---|
+|Language.Actions|Actions|Actions|
+|Language.AddClient|Add Client|Add Client|
+|Language.AddMatter|Add Matter|Add Matter|
+|Language.AllDocuments|All Documents|All Documents|
+|Language.AllTasks|All Tasks|All Tasks|
+|Language.Author|Author|Author|
+|Language.By|By|By|
+|Language.Cancel|Cancel|Cancel|
+|Language.CheckedOutTo|Checked out to|Checked out to|
+|Language.CheckIn|Check In|Check In|
+|Language.CheckOut|Check Out|Check Out|
+|Language.Client|Client|Client|
+|Language.ClientCode|Client Code|Client Code|
+|Language.ClientName|Client Name|Client Name|
+|Language.Clients|Clients|Clients|
+|Language.Close|Close|Close|
+|Language.Completed|Completed|Completed|
+|Language.Contracts|Contracts|Contracts|
+|Language.Created|Created|Created|
+|Language.Date|Date|Date|
+|Language.DateCreated|Date Created|Date Created|
+|Language.DateModified|Date Modified|Date Modified|
+|Language.Details|Details|Details|
+|Language.DocumentID|Document ID|Document ID|
+|Language.Documents|Documents|Documents|
+|Language.Download|Download|Download|
+|Language.Edit|Edit|Edit|
+|Language.EditClientDetails|Edit Client Details|Edit Client Details|
+|Language.EditMatterDetails|Edit Matter Details|Edit Matter Details|
+|Language.EponaDMS|Epona DMS|Epona DMS|
+|Language.FeedbackAndSupport|Feedback & Support|Feedback & Support|
+|Language.FileName|File Name|File Name|
+|Language.FileSize|File Size|File Size|
+|Language.FileType|File Type|File Type|
+|Language.ForOffice365|For Office 365|For Office 365|
+|Language.From|From|From|
+|Language.InProgress|In Progress|In Progress|
+|Language.LastModifiedBy|Last modified by|Last modified by|
+|Language.Loading|Loading....|Loading....|
+|Language.MajorVersion|Major Version|Major Version|
+|Language.Matter|Matter|Matter|
+|Language.Matter_Client|Client|Client|
+|Language.Matter_Code|Code|Matter Code|
+|Language.Matter_MatterArchivedDate|Matter Archived Date|Matter Archived Date|
+|Language.Matter_MatterStage|Matter Stage|Matter Stage|
+|Language.Matter_MatterType|Matter Type|Matter Type|
+|Language.Matter_NormalizedTitle|NormalizedTitle|Normalized Title|
+|Language.Matter_Responsible|Responsible|Responsible|
+|Language.Matter_SiteURL|Site URL|Matter Site URL|
+|Language.Matter_Title|Title|Matter Title|
+|Language.Matter_URL|URL|Matter URL|
+|Language.MatterCenter|Matter Center|Matter Center|
+|Language.MatterDetails|Browse Matter|Matter Details|
+|Language.MatterID|MatterID|MatterID|
+|Language.Matters|Matters|Matters|
+|Language.MatterType|Matter Type|Matter Type|
+|Language.Microsoft|Microsoft|Microsoft|
+|Language.MicrosoftCopyright|© 2015 Microsoft|© 2015 Microsoft|
+|Language.MinorVersion|Minor Version|Minor Version|
+|Language.Modified|Modified|Modified|
+|Language.ModifiedBy|Modified By|Modified By|
+|Language.MoreLinks|More Links|More Links|
+|Language.MyDocuments|My Documents|My Documents|
+|Language.MyMatters|My Matters|My Matters|
+|Language.MyTasks|My Tasks|My Tasks|
+|Language.Navigation|Navigation|Navigation|
+|Language.None|None|None|
+|Language.NotStarted|Not Started|Not Started|
+|Language.Open|Open|Open|
+|Language.OpenMatter|Open Matter|Open Matter|
+|Language.OpenMatterTab|Open Matter Tab|Open Matter Tab|
+|Language.RecentDocuments|Recent Documents|Recent Documents|
+|Language.Reset|Reset|Reset|
+|Language.Responsible|Responsible|Responsible|
+|Language.Save|Save|Save|
+|Language.Search|Search|Search|
+|Language.SendAsLink|Send as link|Send as link|
+|Language.Share|Share|Share|
+|Language.ShowActions|Show Actions|Show Actions|
+|Language.Size|Size|Size|
+|Language.SomethingWentWrong|Some thing went wrong. Kindly load again.|Some thing went wrong. Kindly load again.|
+|Language.Tasks|Tasks|Tasks|
+|Language.TasksCreatedByMe|Tasks created by me|Tasks created by me|
+|Language.ThisWeek|This Week|This Week|
+|Language.To|To|To|
+|Language.TwoWeeks|Two Weeks|Two Weeks|
+|Language.Version|Version|Version|
+|Language.VersionLabel|Version Label|Version Label|
+|Language.ViewMatters|View Matters|View Matters|
+
+<h2>View fields (table columns)</h2>
+
+|Item|Description|
+--- | --- |
+|[ActionName].ViewFields.[SharePointName].DisplayName|Display name of the column|
+|[ActionName].ViewFields.[SharePointName].Order|Order of the column|
+|[ActionName].ViewFields.[SharePointName].SharePointName|Share Point of the column|
+|[ActionName].ViewFields.[SharePointName].Width|Width of the column in % or px. If not mentioned it takes automatically|
+|[ActionName].ViewFields.[SharePointName].Type|Indicate type of the column. By default it takes from list configuration. In sharepoint search case for date column we have to define type.|
+
+
+<h2>Search fields</h2>
+
+|Item|Description|
+--- | --- |
+|[ActionName].SearchFields.[SharePointName].DisplayName|Display name of the column|
+|[ActionName].SearchFields.[SharePointName].Order|Order of the column|
+|[ActionName].SearchFields.[SharePointName].SharePointName|Share Point of the column|
+|[ActionName].SearchFields.[SharePointName].Type|Indicate type of the column. By default it takes from list configuration. In sharepoint search case for date column we have to define type.|
+|[ActionName].SearchFields.[SharePointName].ViewType|Display the view type for radio button search. Vertial/Horizontal.|
+|[ActionName].SearchFields.[SharePointName].Options.[UniqueName].UniqueName|Define the uniquename for radio button options|
+|[ActionName].SearchFields.[SharePointName].Options.[UniqueName].DisplayName|Display name of the radio button options|
+|[ActionName].SearchFields.[SharePointName].Options.[UniqueName].Filter|Stored the filter in days or keyword.|
+|[ActionName].SearchFields.[SharePointName].Options.[UniqueName].Order|Display the order of radio button option.|
+
+
+
+Note: For radio button search, we have created new type called "SP.FieldChoiceDateRadio".
+Some Predefied keyowrds given below:
+|Functions|
+--- |
+|[@TODAY() - Add or subtract days in today date.]|
+|[@Month() - add or subtract month from current month]|
+|[@Year() = add or subtract year from current year.]|
+
+
+|Defauly keywords from SharePoint for date search.||
+--- | --- |
+|today|Represents the time from the beginning of the current day until the end of the current day.|
+|yesterday|Represents the time from the beginning of the day until the end of the day that precedes the current day.|
+|this week|Represents the time from the beginning of the current week until the end of the current week. The culture in which the query text was formulated is taken into account to determine the first day of the week.|
+|this month|Represents the time from the beginning of the current month until the end of the current month.|
+|last month|Represents the entire month that precedes the current month.|
+|this year|Represents the time from the beginning of the current year until the end of the current year.|
+|last year|Represents the entire year that precedes the current year.|
+
+
+<h2>Add/Edit fields</h2>
+
+|Item|Description|
+--- | --- |
+|[ActionName].AddFields.[SharePointName].DisplayMode|Indicate the mode of column. Edit/View/Hidden|
+|[ActionName].AddFields.[SharePointName].DisplayName|Display name of the column|
+|[ActionName].AddFields.[SharePointName].Order|Order of the column|
+|[ActionName].AddFields.[SharePointName].SharePointName|SharePoint internal name of the column.|
+|[ActionName].EditFields.[SharePointName].DisplayMode|Indicate the mode of column. Edit/View/Hidden|
+|[ActionName].EditFields.[SharePointName].DisplayName|Display name of the column|
+|[ActionName].EditFields.[SharePointName].Order|Order of the column|
+|[ActionName].EditFields.[SharePointName].SharePointName|SharePoint internal name of the column.|
+
+Note: Validation like required column it takes from lists default settings.
+
+
+<h2>Menu and tabs</h2>
+
+
+Item|Description|Types|Remark|
+--- | --- | --- | --- | 
+|Main Menu - Displayed in Navigation||||
+|Navigation.[UniqueName].DefaultActionName|Display the default action when you clicked on the navigation menu.|SharePoint, List, Hybrid and DocumentList||
+|Navigation.[UniqueName].DisplayName|Display name in the navigation.|All||
+|Navigation.[UniqueName].Order|Order of menu.|All||
+|Navigation.[UniqueName].UniqueName|unique name for action|All||
+|Navigation.[UniqueName].IDS|It's only for navigation if new class or id introduce in SharePoint. It's automatically add for navigation purpose|Only for navigation Action|
+
+<h3>Tabs</h3>
+
+Item|Description|Types|Remark|
+--- | --- | --- | --- | 
+|Navigation.Tab.[ActionName].ActionName|Set the action name.|All||
+|Navigation.Tab.[ActionName].DisplayName|Display name.|All||
+|Navigation.Tab.[ActionName].ListName|If we fetch data from lists. Requied to set the list name. Only for document it's optional.|List, Hybrid, DocumentList, Add||
+|Navigation.Tab.[ActionName].LookupColumnName|If list has parent child relationship (Matters->MyMatters) we need to add lookupcolumn name|List|If user has parent Child relation list (Matters and My Matters)|
+|Navigation.Tab.[ActionName].OnClickAction|Onlick of first column perform default context menu action.|All||
+|Navigation.Tab.[ActionName].Order|Display order.|All||
+|Navigation.Tab.[ActionName].Parent|Parent menu action name.|All||
+|Navigation.Tab.[ActionName].ParentListName|If it's a child list (MyMatters). It is required to add parent list name (Matters)|List|If user has parent Child relation list (My Matters->Matters)|
+|Navigation.Tab.[ActionName].QueryString|set the querty string for access it from the url.|All||
+|Navigation.Tab.[ActionName].Type|Set the type of action. SharePoint/List/Hybrid/DocumentList/Add|All||
+|Navigation.Tab.[ActionName].ChildListName|If list has any child list (matters->MyMatters). Need to mention child list name.|List|If user has parent Child relation list (Matters->My Matters)|
+|Navigation.Tab.[ActionName].Filter|Worked on SharePoint and Hybrid search. Add filter query|SharePoint, Hybrid||
+|Navigation.Tab.[ActionName].OverrideDefaultFilter|Override default filter and use this as default query.|SharePoint, Hybrid||
+|Navigation.Tab.[ActionName].ReuseView|Reuse the view of any other action. Mention action name.|||
+|Navigation.Tab.[ActionName].IsDocumentSearch|true/false. Search on document or not.|SharePoint, Hybrid||
+
+
+<h3>Childs</h3>
+
+Item|Description|Types|Remark|
+--- | --- | --- | --- | 
+|Navigation.Child.[ActionName].ActionName|Set the action name.|All||
+|Navigation.Child.[ActionName].DisplayName|Display name.|All||
+|Navigation.Child.[ActionName].ListName|List Name|All||
+|Navigation.Child.[ActionName].Order|Order|All||
+|Navigation.Child.[ActionName].Parent|Parent menu action name.|List|If user has parent Child relation list (My Matters->Matters)|
+|Navigation.Child.[ActionName].QueryString|set the querty string for access it from the url.|All||
+|Navigation.Child.[ActionName].RedirectAction|After adding the data redirect to secific action.|List||
+|Navigation.Child.[ActionName].Type|Set the type of action. SharePoint/List/Hybrid/DocumentList/Add. Here it's always Add.|All||
+
+<h3>Note: available types in this solution:</h3>
+
+|Type|Descripton|
+--- | --- |
+|SharePoint|Display data from SharePoint search|
+|List|Display Data From the list|
+|Hybrid|Display Data from SharePoint search and the list.|
+|DocumentList|Display document data from the list (Recent documnets)|
+|Add|Add data into the list.|
+
+Note: [Me] - represent current user.
+
