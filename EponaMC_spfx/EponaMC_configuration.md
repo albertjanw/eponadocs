@@ -1,13 +1,13 @@
 <h1>Epona Matter Center SPFx configuration</h1>
 
-Epona MC can be confugured by settings in DMS Configuration.The defaults for all the lists, forms and filters are defined within the app, so the works without additional settings. Only when a customer wants to have something changed, like the title of the Matter column, the columns that are displayed etc. items should be added to the DMS Configuration list to overrule the default.
+Epona MC can be configured by settings in DMS Configuration.The defaults for all the lists, forms and filters are defined within the app, so the works without additional settings. Only when a customer wants to have something changed, like the title of the Matter column, the columns that are displayed etc. items should be added to the DMS Configuration list to overrule the default.
 
 <h2>General syntax</h2>
-Items added for the Epona MC SPFx app should all have 'SPF' in the Category field. The Title field contains the key for the setting. he key constsist, like for the DMSforLegal settings, of a a more or less hierargical structure of words, each separated by a dot. The value field contains the actual setting, and the desciption is only used as documentation.
+Items added for the Epona MC SPFx app should all have 'SPF' in the Category field. The Title field contains the key for the setting. The key constsist, like for the DMSforLegal settings, a more or less hierargical structure of words, each separated by a dot. The value field contains the actual setting, and the desciption is only used as documentation.
 
 <h2>MCAdmin: the app for admins to simplify the configuration</h2>
 Like EponaMC SPFX, MCAdmin is a modern SharePoint web app that can be installed on any page within the DMSforLegal sitecollection. To make the app available in SharePoint, the MCAdmin.sppkg file has to be uploaded to the app catalog and deployed.
-After that, as a default, a new SP page is created in the DMSforLegal site collection, within the SitePages folder called 'MCAdmin'. If available, the webpartpage is used as template. Then the MCAdmin app is added to this page.
+After that a new SP page is created in the DMSforLegal site collection, as a default within the SitePages folder and called 'MCAdmin'. If available, the webpartpage is used as template. Then the MCAdmin app is added to this page.
 
 As the app is meant for administratiors, access restrictions can be configured for the page.
 
@@ -16,6 +16,7 @@ As the app is meant for administratiors, access restrictions can be configured f
 
 <h3>Using the app</h3>
 The app has 3 parts that handles different settings for EponaMC
+
 
 1-Fixed text elements
 
@@ -42,7 +43,7 @@ There are a few settings for EponaMC SPFX that can be changed both from the DMS 
 <img src="mcadmin4.png">
 
 <h4>List and form field</h4>
-This part covers probably the most important settings. It allows selecting a list type (Matters, MyMattres, Clients etc.) and a part (the listview, searchpanel, add form, edit form) to change the fields and their behaviour.
+This part covers probably the most important settings. It allows selecting a list type (Matters, MyMattres, Clients etc.) and a part (the view, filter panel, add form, edit form) to change the fields and their behaviour.
 
 When first selected the currently configured fields and their settings are displayed. For the listviews, an input field is shown which contains the Width of the field, if set.
 
