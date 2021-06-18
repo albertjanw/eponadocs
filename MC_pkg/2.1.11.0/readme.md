@@ -1,4 +1,6 @@
 <h1>Latest Epona MatterCenter package (2.1.11.0)</h1>
+<img src="../EponaMC_logo.png">
+
 
 |New Changes|
 --- |
