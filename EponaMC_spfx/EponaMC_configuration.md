@@ -5,6 +5,72 @@ Epona MC can be confugured by settings in DMS Configuration.The defaults for all
 <h2>General syntax</h2>
 Items added for the Epona MC SPFx app should all have 'SPF' in the Category field. The Title field contains the key for the setting. he key constsist, like for the DMSforLegal settings, of a a more or less hierargical structure of words, each separated by a dot. The value field contains the actual setting, and the desciption is only used as documentation.
 
+<h2>MCAdmin: the app for admins to simplify the configuration</h2>
+Like EponaMC SPFX, MCAdmin is a modern SharePoint web app that can be installed on any page within the DMSforLegal sitecollection. To make the app available in SharePoint, the MCAdmin.sppkg file has to be uploaded to the app catalog and deployed.
+After that, as a default, a new SP page is created in the DMSforLegal site collection, within the SitePages folder called 'MCAdmin'. If available, the webpartpage is used as template. Then the MCAdmin app is added to this page.
+
+As the app is meant for administratiors, access restrictions can be configured for the page.
+
+
+<img src="mcadmin1.png">
+
+<h3>Using the app</h3>
+The app has 3 parts that handles different settings for EponaMC
+
+1-Fixed text elements
+
+2-Common settings
+
+3-List and form field
+
+
+The individual parts are discussed below.
+
+<h4>Fixed text elements</h4>
+When typing in the searchfield, the app will show all the text elements where either the key or the text value contains the typed text. This allows an easy way to find the text to be edited.
+
+<img src="mcadmin2.png">
+
+Once a choice is made the user can change the text that belongs to the key, and press the Update button to save the changes.
+
+<img src="mcadmin3.png">
+
+<h4>Common settings</h4>
+There are a few settings for EponaMC SPFX that can be changed both from the DMS Configuration Tool as wel as for the app.
+
+
+<img src="mcadmin4.png">
+
+<h4>List and form field</h4>
+This part covers probably the most important settings. It allows selecting a list type (Matters, MyMattres, Clients etc.) and a part (the listview, searchpanel, add form, edit form) to change the fields and their behaviour.
+
+When first selected the currently configured fields and their settings are displayed. For the listviews, an input field is shown which contains the Width of the field, if set.
+
+<img src="mcadmin5.png">
+
+The listview allows:
+
+- Remove the field from being displayed, by the trashbin icon
+
+- Set or clear the width of the field as displayed in the table, in pixels
+
+- Change the order of the fields, by dragging them to another location in the list
+
+- Add more fields to the list, by selecting the 'Add new' button (not for search based items like documents)
+
+The 'Add new' button shows all the fields from the SP list that are currently not selected. Multiple columns can be selected by clicking the '+'.   
+
+<img src="mcadmin6.png">
+
+When slecting the 'Add' button the app returns to the previous form, now including the selected fields. The 'Update' button can be selected to save the changes.
+
+When managing the settings for an Add or Update form, its is also possible to just disable or enable individual fields: 
+
+<img src="mcadmin7.png">
+
+
+<h1>Manual settings</h1>
+Not all possible settings can be handled by the MCAdmin app yet. The part below describes how settings are implemented in the DMS Configuration list, so they can ne manually changed.
 <h2>A few common settings</h2>
 There are a few common settings that, for most of them, can also be set by the DMS Configuration tool (The tool only adds them when the chosen value differs from the default setting).
 <table>
@@ -738,15 +804,16 @@ Note: Validation like required column it takes from lists default settings.
 
 <h2>Menu and tabs</h2>
 
+<h3>Main Menu - Displayed in Navigation</h3>
 
 Item|Description|Types|Remark|
 --- | --- | --- | --- | 
-|Main Menu - Displayed in Navigation||||
 |Navigation.[UniqueName].DefaultActionName|Display the default action when you clicked on the navigation menu.|SharePoint, List, Hybrid and DocumentList||
 |Navigation.[UniqueName].DisplayName|Display name in the navigation.|All||
 |Navigation.[UniqueName].Order|Order of menu.|All||
 |Navigation.[UniqueName].UniqueName|unique name for action|All||
 |Navigation.[UniqueName].IDS|It's only for navigation if new class or id introduce in SharePoint. It's automatically add for navigation purpose|Only for navigation Action|
+|Navigation.[UniqueName].Visibility|Show or hide the menu item||show/hide|
 
 <h3>Tabs</h3>
 
@@ -765,7 +832,7 @@ Item|Description|Types|Remark|
 |Navigation.Tab.[ActionName].ChildListName|If list has any child list (matters->MyMatters). Need to mention child list name.|List|If user has parent Child relation list (Matters->My Matters)|
 |Navigation.Tab.[ActionName].Filter|Worked on SharePoint and Hybrid search. Add filter query|SharePoint, Hybrid||
 |Navigation.Tab.[ActionName].OverrideDefaultFilter|Override default filter and use this as default query.|SharePoint, Hybrid||
-|Navigation.Tab.[ActionName].ReuseView|Reuse the view of any other action. Mention action name.|||
+|Navigation.Tab.[ActionName].ReuseViewActionName|Reuse the view of any other action. Mention action name.|||
 |Navigation.Tab.[ActionName].IsDocumentSearch|true/false. Search on document or not.|SharePoint, Hybrid||
 
 
