@@ -28,7 +28,7 @@ An app catalog should only be created once in an SharePoint environment. For an 
 
 ## Install or update the SPFX app.
 
-At the time of writing required package file can be retrieved from [../readme.md](https://github.com/albertjanw/eponadocs). 
+At the time of writing required package file can be retrieved from [Documentation for Epona products](../readme.md). 
 
 1. Get a local copy of epona-dms-legal.sppkg.
 2. Navigate to the app catalog site and select &#39;Distribute apps for SharePoint&#39;
@@ -76,4 +76,4 @@ It adds some settings to the DMS Configuration List (SPF category), that can of 
 ## Configuration
 Configration can be done both by changing or adding listitems in the DMS Configuraion list manually, as well by installing in MCAdmin app.
 
-See for instructions the EponaMC_configuration page from [../readme.md](https://github.com/albertjanw/eponadocs). 
+See for instructions the EponaMC_configuration page from [Documentation for Epona products](../readme.md). 
