@@ -1,4 +1,5 @@
 <h1>Latest MC Admin package (1.4.5)</h1>
+<img src="../MCAdmin_logo.png">
 
 |New Changes|
 --- |
