@@ -34,7 +34,7 @@ Installing of the app follows the standard process for SPFX apps. The only diffe
 
 A SharePoint site needs an app catalog to be able to handle SharePoint apps. This has to be created only once, and can be checked/created using the admin center:
 
-- Navigate to \&lt;the sp-site\&gt;-admin.sharepoint.com
+- Navigate to &lt;the sp-site&gt;-admin.sharepoint.com
 - Select the &#39;More Features&#39;, and then open the &#39;Apps&#39;
 
  ![](./img2.png)
@@ -64,7 +64,7 @@ To make the app available in Teams, or to have Teams use the latest version, sel
 In order to allow the KMS app to be working on any site of the tenant, and to work as Teams app, the app needs to know where the DMSforLegal lists are installed. This is resolved by adding a property to the property bag of the root site, that contains the path to the DMSforLegal. This setting can be added in 2 ways:
 
 - Using PnPPowerShell as admin, for example:
-Set-PnPPropertyBagValue -Key &quot;DMS\_SiteCollection&quot; -Value &quot;https://\&lt;tenants-sp\&gt;/sharepoint.com/sites/dmsforlegal&quot;
+Set-PnPPropertyBagValue -Key &quot;DMS\_SiteCollection&quot; -Value &quot;https://&lt;tenants-sp&gt;/sharepoint.com/sites/dmsforlegal&quot;
 - Update KMS using the Client Configuration Tool. The update will not install the SPFX app, but will check whether the property bag key has been set correctly.
 
 ### <a id="_Toc71193458"></a>Add KMS app to a SharePoint Page
