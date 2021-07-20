@@ -10,6 +10,6 @@
 <h2>Packages</h2>
 <a href="./MC_pkg/2.1.17.0/readme.md" target="_blank">Latest Epona MatterCenter package (2.1.17.0)</a>
 
-<a href="./MCAdmin_pkg/1.5.0/readme.md" target="_blank">Latest MC Admin package (1.5.0)</a>
+<a href="./MCAdmin_pkg/1.5.2/readme.md" target="_blank">Latest MC Admin package (1.5.2)</a>
 
 <a href="./KMS_pkg/1.0.31/readme.md" target="_blank">Latest Epona Knowledge Management package (1.0.31)</a>
