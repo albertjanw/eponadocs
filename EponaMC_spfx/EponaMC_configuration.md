@@ -802,6 +802,33 @@ Some Predefied keyowrds given below:
 
 Note: Validation like required column it takes from lists default settings.
 
+<h2>Visual dependent fields in Add/Edit forms</h2>
+A field can be made visible/invisible based on the selected value of another field.
+
+Configuration for hiding and showing column. 
+|Item|Description|
+--- | --- |
+|[ActionName].EditFields.[SharePointName].[Value]HideColumnName|Hide column on selected value. It stored comma(,) seperated SharePoint internal column Name|
+|[ActionName].EditFields.[SharePointName].[Value]ShowColumnName|Show column on selected value. It stored comma(,) seperated SharePoint internal column Name|
+
+
+<h3>Example for show and hide column:</h3>
+
+|Item|Cat|Description|
+--- | --- | --- |
+|Matters.AddFields.Security.DefaultShowColumnName|SPF|MatterType,Client|
+|On Matters add form, Security column, whenever user select a Default value||Show given column. Multiple columns separated by comma(,)|
+
+
+
+|Item|Cat|Description|
+--- | --- | --- |
+|Matters.AddFields.Security.SecureHideColumnName|SPF|MatterType,Client|
+|On Matters add form, Security column, whenever user select Secure value||Hide given column. Multiple columns separated by comma(,)|
+
+
+
+
 
 <h2>Menu and tabs</h2>
 
