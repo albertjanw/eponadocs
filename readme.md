@@ -8,7 +8,7 @@
 <a href="./KMS_spfx/readme.md">Epona Knowledge Management System</a>
 
 <h2>Packages</h2>
-<a href="./MC_pkg/2.1.21.0/readme.md" target="_blank">Latest Epona MatterCenter package (2.1.21.0)</a>
+<a href="./MC_pkg/2.1.22.0/readme.md" target="_blank">Latest Epona MatterCenter package (2.1.22.0)</a>
 
 <a href="./MCAdmin_pkg/1.5.2/readme.md" target="_blank">Latest MC Admin package (1.5.2)</a>
 

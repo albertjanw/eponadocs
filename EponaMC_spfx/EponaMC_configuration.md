@@ -795,10 +795,12 @@ Some Predefied keyowrds given below:
 |[ActionName].AddFields.[SharePointName].DisplayName|Display name of the column|
 |[ActionName].AddFields.[SharePointName].Order|Order of the column|
 |[ActionName].AddFields.[SharePointName].SharePointName|SharePoint internal name of the column.|
+|[ActionName].AddFields.[SharePointName].Tooltip|Display tooltip on control.|
 |[ActionName].EditFields.[SharePointName].DisplayMode|Indicate the mode of column. Edit/View/Hidden|
 |[ActionName].EditFields.[SharePointName].DisplayName|Display name of the column|
 |[ActionName].EditFields.[SharePointName].Order|Order of the column|
 |[ActionName].EditFields.[SharePointName].SharePointName|SharePoint internal name of the column.|
+|[ActionName].EditFields.[SharePointName].Tooltip|Display tooltip on control.|
 
 Note: Validation like required column it takes from lists default settings.
 
@@ -862,7 +864,8 @@ Item|Description|Types|Remark|
 |Navigation.Tab.[ActionName].OverrideDefaultFilter|Override default filter and use this as default query.|SharePoint, Hybrid||
 |Navigation.Tab.[ActionName].ReuseViewActionName|Reuse the view of any other action. Mention action name.|||
 |Navigation.Tab.[ActionName].IsDocumentSearch|true/false. Search on document or not.|SharePoint, Hybrid||
-
+|Navigation.Tab.[ActionName].ColumnOrder|Sorting type ascending or descending (true - ascending false - descending) default descending.|
+|Navigation.Tab.[ActionName].ColumnOrderBy|Name of the column you need to set default sorting.|
 
 <h3>Childs</h3>
 
@@ -888,4 +891,6 @@ Item|Description|Types|Remark|
 |Add|Add data into the list.|
 
 Note: [Me] - represent current user.
+
+
 
