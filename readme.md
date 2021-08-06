@@ -12,4 +12,4 @@
 
 <a href="./MCAdmin_pkg/1.5.6/readme.md" target="_blank">Latest MC Admin package (1.5.6)</a>
 
-<a href="./KMS_pkg/1.0.31/readme.md" target="_blank">Latest Epona Knowledge Management package (1.0.31)</a>
+<a href="./KMS_pkg/1.0.32/readme.md" target="_blank">Latest Epona Knowledge Management package (1.0.32)</a>
