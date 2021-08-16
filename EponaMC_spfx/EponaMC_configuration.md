@@ -70,6 +70,21 @@ When managing the settings for an Add or Update form, its is also possible to ju
 <img src="mcadmin7.png">
 
 
+<h1>Immediate links</h1>
+Request params can be used to have the app opened in a specific way, one of the lists or one of the forms for adding items. The parts are added to the link of the page where EponaMC is installed on. If MatterCenter is installed on 'SPFxHome.aspx' and Example could be:
+
+/SitePages/SPFxHome.aspx?searchlist=clients
+
+|Request param syntax|Description|
+| --- | --- |
+|?action=addclient|Opens the form to add a client|
+|?action=addmatter|Opens the form to add a matter|
+|?searchlist=matters|Opens the (all) matters list|
+|?searchlist=clients|Opens the clients list|
+|?searchlist=mydocuments|Opens the my documents list|
+|?searchlist=alldocuments|Opens the all documents list|
+|?filter=epona|Applies the filter 'Epona' to the list that is opened|
+
 <h1>Manual settings</h1>
 Not all possible settings can be handled by the MCAdmin app yet. The part below describes how settings are implemented in the DMS Configuration list, so they can ne manually changed.
 <h2>A few common settings</h2>
