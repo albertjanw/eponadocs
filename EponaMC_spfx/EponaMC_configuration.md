@@ -37,7 +37,7 @@ Once a choice is made the user can change the text that belongs to the key, and 
 <img src="mcadmin3.png">
 
 <h4>Common settings</h4>
-There are a few settings for EponaMC SPFX that can be changed both from the DMS Configuration Tool as wel as for the app.
+There are a few settings for EponaMC SPFX that can be changed both from the DMS Configuration Tool as wel as for the app. The settings for the hamburger menu can also be configured here and allows to show or hide specifig menu items.
 
 
 <img src="mcadmin4.png">
