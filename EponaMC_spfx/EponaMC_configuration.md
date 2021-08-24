@@ -69,6 +69,11 @@ When managing the settings for an Add or Update form, its is also possible to ju
 
 <img src="mcadmin7.png">
 
+The 'Evaluation/manual configuration section offers a link to the documentation on de installation and documentation of Epona Matter Center SPFX, as well as a quick link to open the DMS configuration list, filtered for the SPF category with settings limited to Epona Matter Center SPFX and sorted by modified descending.
+
+<img src="mcadmin8.png">
+
+
 
 <h1>Immediate links</h1>
 Request params can be used to have the app opened in a specific way, one of the lists or one of the forms for adding items. The parts are added to the link of the page where EponaMC is installed on. If MatterCenter is installed on 'SPFxHome.aspx' and Example could be:
